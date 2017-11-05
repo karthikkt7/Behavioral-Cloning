@@ -133,7 +133,7 @@ The batch size i used is 50.
 Problems :
 - AWS instance access took a lot of time to get resolved
 - Meantime when I run the model in my PC (which do not have high graphics processor), I had to reduce the data set to 12K.
-  For such image data set, it took a day to run. So, I managed to conclude (atleast) with the best out of me in the model.
+  For such image data set, it took a day to run. So, I managed to conclude (atleast within deadline) with the best out of me in finally   on AWS instance after resolving at the end.
   
 Due to the less support I got from Mentor, forums, I was able to finish to this level. In the end, the project aimed at 
 defining the network architecture and how much good and number of image data set that it is trained on.
