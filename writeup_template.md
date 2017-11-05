@@ -23,11 +23,9 @@ This project is entirely dependent on two main factors
 
 How well the network architecture is defined
 How good the model has been trained (with a considerable number of images including data augmentation)
-I have faced many challenges in carrying out this project. Since the errrors or issues that I was facing is quite entirely new to me, I am not able to complete the project. Though I am submitting my trained model and the python file(including jupyter notebook). Due to time constraint, I had to submit the following files alone. I did not receive proper support from mentor and tried to post my errors in slack community, but got less response. I have to thank personally to fellow nano-degree student Mr.Joao Sauso Pinto for helping me to solve the errors and atleast run my model. He also provided a huge data set of images which I find it pretty good. The recorded data has the car driving in the center, several random recordings, car also drives close to the left lane, center of the lane, close to the right lane, car driving in reverse direction. It has in total 2.4L images from the lap recording.
+I have faced many challenges in carrying out this project. Since the errrors or issues that I was facing is quite entirely new to me, I am not able to complete the project. Though I am submitting my trained model and the python file(including jupyter notebook). Due to time constraint, I had to submit the following files alone. I did not receive proper support from mentor and tried to post my errors in slack community, but got less response. I have to thank personally to fellow nano-degree student Mr.Joao Sauso Pinto for helping me to solve the errors and atleast run my model. He also provided a huge data set of images which I find it pretty good. The recorded data has the car driving in the center, several random recordings, car also drives close to the left lane, center of the lane, close to the right lane, car driving in reverse direction. It has in total ~2.1L images from the lap recording.
 
 I do not know the reason why the simulator is not running in Autonomous mode to test my trained model. Spent a lot of time on finding the reason, but unfortunately did not succeed. The simulator hangs up when I run the command "python drive.py model.h5"
-
-The data visualization is not discussed here since I find this is bit in the background (you can find it in .ipynb)
 
 The network architecture is defined as follows :
 
@@ -59,7 +57,7 @@ The network architecture is defined as follows :
 - Dense (50)
 - Dense (10)
 - Dense (1)
-The total number of images that I feed in is approx 2.1 lac images and i use offset of 0.15 for the right and left camera images Though I had split the entire set(~2.4L images) into 90% training and 10%validation, I did not use the validation set due to time constraint. But i find that the MSE decreases from one EPOCH to the next which is good and since I have 3 EPOCHS, I do not see overfitting. I also flip alternate images which I do it in generator_data. The ADAM optimizer with learning rate is kept at 0.00025(trial and errror) The batch size i used is 50.
+The total number of images that I feed in is approx 2.1 lac images and i use offset of 0.15 for the right and left camera images Though I had split the entire set(~2.1L images) into 90% training. I did not use the validation set due to time constraint. But i find that the MSE decreases from one EPOCH to the next which is good and since I have 2 EPOCHS, I do not see overfitting. I also flip alternate images which I do it in generator_data. The ADAM optimizer with learning rate is kept at 0.00025(trial and errror) The batch size i used is 50.
 
 Problems :
 
