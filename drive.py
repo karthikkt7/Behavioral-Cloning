@@ -44,7 +44,7 @@ class SimplePIController:
 
 
 controller = SimplePIController(0.1, 0.002)
-set_speed = 10 #car speed changed from 15 to 10 to avoid going off the track at (22s) sharp turn 
+set_speed = 7 #Set speed to 7 mph now 
 controller.set_desired(set_speed)
 
 
